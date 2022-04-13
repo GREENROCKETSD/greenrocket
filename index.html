@@ -19,6 +19,30 @@
 
   <link rel="stylesheet" href="assets/css/theme.css">
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sdwidget/sd/css/sdwidget.css" />
+
+  <style>
+    /* Button Color */
+    .sd-widget-toolbar-nav>div.sd-widget-toolbar-nav-active,
+    .sd-widget-bottom button,
+    .sd-widget-bottom button:hover {
+      background-color: #872eff;
+    }
+  
+    /* Background color for toggle button */
+    .sd-widget-bottom button.Mui-disabled {
+      background-color: #ccc;
+    }
+  
+    /* Background color for disabled button */
+    .sd-widget-bottom button.MuiIconButton-root {
+      background-color: rgb(242, 244, 243);
+    }
+    #sd-widget {
+      margin: auto;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -51,9 +75,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="btn btn-primary ml-lg-2" href="#">Free Analytics</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-2" href="#swap">Swap</a>
+            </li>
           </ul>
         </div>
 
@@ -78,6 +102,14 @@
       </div>
     </div>
   </header>
+
+    <div class="page-section" id="swap">
+      <div class="container">
+        <div class="row">
+          <div id="sd-widget" data-token="SD token address" data-chain="56" data-theme="dark" data-elevation="on"></div>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
 
   <div class="page-section" id="tokenomics">
     <div class="container">
@@ -467,6 +499,8 @@
 <script src="assets/vendor/wow/wow.min.js"></script>
 
 <script src="assets/js/theme.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/sdwidget/sd/js/sdwidget.js" defer></script>
   
 </body>
 </html>
